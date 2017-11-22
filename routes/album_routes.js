@@ -6,7 +6,7 @@ var async = require('async');
 var http = require('http');
 
 // bandcamp hack node-bandcamp
-var bandcamp = require('bandcamp-scraper');
+//var bandcamp = require('bandcamp-scraper');
 
 var server = http.Server(app);
 var mongoose = require('mongoose');
@@ -1647,18 +1647,18 @@ var myBandCampParams = {
 async.series({
 	bandcamp: function(callback){
       
-	  bandcamp.search(myBandCampParams, function(error, searchResults) {
-		if (error) {
-			console.log(error);
-		} else {
+	  //bandcamp.search(myBandCampParams, function(error, searchResults) {
+		//if (error) {
+		//	console.log(error);
+		//} else {
 			
-			myBandCampStorTop.push(searchResults[0].url)
+			//myBandCampStorTop.push(searchResults[0].url)
 	
-		}
-		  console.log("bandcamp done");
-          callback(null, myBandCampStorTop);
+		//}
+		 // console.log("bandcamp done");
+         // callback(null, myBandCampStorTop);
 		
-		});
+		//});
 	  },
 	  
 
@@ -1681,7 +1681,7 @@ async.series({
       console.log("all done");
       console.log(results.google);
       console.log(results.yahoo);
-	  console.log(results.bandcamp);
+	 // console.log(results.bandcamp);
 	 
     }else{
       console.log(err);
@@ -1720,20 +1720,20 @@ var queryOptionsTwo = {
 
 
 console.log('the bandcamp artist url from search');
-console.log(myBandCampStorTop[0]);
+//console.log(myBandCampStorTop[0]);
 console.log('the bandcamp artist url from search');
 
 
-var artistURL = "https://jeff-marshall.bandcamp.com/";
-bandcamp.getAlbumUrls(artistURL, function(error, results) {
-  if (error) {
-    console.log(error);
-  } else {
-	  console.log('getAlbumUrls')
-    console.log(results);
-	console.log('getAlbumUrls')
-  }
-});
+//var artistURL = "https://jeff-marshall.bandcamp.com/";
+//bandcamp.getAlbumUrls(artistURL, function(error, results) {
+  //if (error) {
+    //console.log(error);
+  //} else {
+	 // console.log('getAlbumUrls')
+    //console.log(results);
+	//console.log('getAlbumUrls')
+  //}
+//});
 
 
 

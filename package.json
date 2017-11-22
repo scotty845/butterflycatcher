@@ -6,6 +6,10 @@
   "dependencies": {
   },
   "devDependencies": {},
+  "engines": {
+    "node": "6.8.1",
+	 "npm": "3.10.8"
+  },
   "scripts": {
     "test": "node server"
   },

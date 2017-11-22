@@ -28,7 +28,14 @@ app.use(bodyparser.json());
 var myMakeAlbumTwo = require('./routes/album_routes');
 
 
-mongoose.connect(process.env.MONG_URI || 'mongodb://localhost:27017/mr_music');
+//mongoose.connect(process.env.MONG_URI || 'mongodb://localhost:27017/mr_music');
+
+mongoose.connect(process.env.MONG_URI || 'mongodb://Mybutterflyuser55:Mybutterflydb55@ds115436.mlab.com:15436/heroku_h5c2rcs6');
+//<dbuser>:<dbpassword>@ds115436.mlab.com:15436/heroku_h5c2rcs
+
+//var db = mongojs('mongodb://admin:admin@ds011331.mlab.com:11331/heroku_6hqp3f56', ['questions','surveyusers']);
+
+//var db = mongojs('mongodb://admin:admin@ds011331.mlab.com:11331/heroku_6hqp3f56', ['questions','surveyusers']);
 
 
 var router = express.Router();
