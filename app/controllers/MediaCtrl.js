@@ -1,4 +1,4 @@
-'use strict';
+
 
 /* Controllers */
 var musicApp = angular.module("musicApp");

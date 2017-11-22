@@ -683,11 +683,11 @@ this.findByListName = function(paramAlbumObject, paramListName) {
 	
 
 // YOUTUBE VIDEO CODE
-//$(document).ready(function(){
+$(document).ready(function(){
 	
  
  
-//});    
+});    
 //
 // functionality for modal opening 	   
 //	   
