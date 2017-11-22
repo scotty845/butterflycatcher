@@ -695,7 +695,7 @@ router.post( '/addAlbum', function( req, res, next ) {
 	  
 	   //admin user holds all albums can delete
 	   //hard coded until a management console is built out
-       User.findOne({_id: mongoose.Types.ObjectId("584f1709fba25c3cede9b6c2") }, function (error, doc) {		  
+       User.findOne({_id: mongoose.Types.ObjectId("5a15f009ac320714003476db") }, function (error, doc) {		  
 	 
 		  
 			 var AlbumsMBP = [];
