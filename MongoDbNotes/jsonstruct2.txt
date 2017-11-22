@@ -1,0 +1,1014 @@
+
+
+
+
+ db.users.findOne({"_id":ObjectId("5828e18042c683284751c53b")})
+
+db.users.findOne({"_id":ObjectId("5828e16b42c683284751c53a")})
+
+
+db.users.remove({"_id":ObjectId("5824708842c683284751c536")})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{ "albums":{
+
+
+
+
+
+
+          }
+
+}
+
+
+
+**********  USER  *******************
+
+var myTestUser1 = { 
+"_id" : "57077feec5f84a8c38697777", 
+"bio" : "martinbio", 
+"avatar" : "bubbagump", 
+"username" : "mmartin", 
+"bonusPoints" : 0, 
+"hasSubmitted" : false, 
+"remainingVotes" : 5, 
+"basic" : { "password" : "$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW", "email" : "mmartin@gmail.com" }, 
+
+"albums": 
+	[
+	{"listname":"111","status":'public', 'createdBy':"57077feec5f84a8c38697367", "songs":[{"title":"Ellie Goulding - Love Me Like You Do (Official Video)",
+	"thumbnail":"https://i.ytiom/vi/AJtDXIazrMo/default.jpg","videoid":"AJtDXIazrMo","drag":true},
+	{"title":"Make You Feel My Love - Lindsay Ell Cover","thumbnail":"https://i.ytimg/vi/elgwQVodcek/default.jpg","videoid":"elgwQVodcek","drag":true},
+	{"title":"Shut Me Up (Acoustic Version) - Lindsay Ell - The Ell Sessions","thumbnail":"https://i.ytimg.com/vi/u-BqgHfeZss/default.jpg","videoid":"u-BqgHfeZss","drag":true},
+	{"title":"Lindsay Ell - All Alright (Audio)","thumbnail":
+	"https:i.ytimg.com/vi/AsnSYO59eWw/default.jpg","videoid":"AsnSYO59eWw","drag":true}]
+
+	},
+	{
+	"listname":"elton1","status":'public', 'createdBy':"57077feec5f84a8c38697367", 
+	"songs":[{"title":"AC/DC - Back In Black","thumbnail":"https://i.ytimg.com/vi/pAgnJDJN4VA/default.jpg","videoid":"pAgnJDJN4VA","drag":true},{"title":"AC/DC - Highway to Hell","thumbnail":"https://i.ytimg.com/vi/gEPmA3USJdI/default.jpg","videoid":"gEPmA3USJdI","drag":true},{"title":"AC/DC - T.N.T.","thumbnail":"https://i.ytimg.com/vi/44XYEeD1A1U/default.jpg","videoid":"44XYEeD1A1U","drag":true},{"title":"AC/DC - Hells Bells","thumbnail":"https://i.ytimg.com/vi/etAIpkdhU9Q/default.jpg","videoid":"etAIpkdhU9Q","drag":true},{"title":"AC/DC - You Shook Me All Night Long (2012 Version)","thumbnail":"https://i.ytimg.com/vi/zakKvbIQ28o/default.jpg","videoid":"zakKvbIQ28o","drag":true}]
+	
+	},
+	
+	{
+	"listname":"333", "status":'public', 'createdBy':"57077feec5f84a8c38697367",   
+	"songs":[{"title":"David Bowie – Space Oddity [OFFICIAL VIDEO]","thumbnail":"https://i.ytimg.com/vi/iYYRH4apXDo/default.jpg","videoid":"iYYRH4apXDo","drag":true},{"title":"David Bowie - Heroes",
+	"thumbnail":"https://i.ytimg.com/vi/Tgcc5V9Hu3g/default.jpg","videoid":"Tgcc5V9Hu3g","drag":true},{"title":"David Bowie - Let's Dance","thumbnail":"https://i.ytimg.com/vi/N4d7Wp9kKjA/default.jpg","videoid":"N4d7Wp9kKjA","drag":true},{"title":"David Bowie - Modern Love","thumbnail":"https://i.ytimg.com/vi/1hDbpF4Mvkw/default.jpg","videoid":"1hDbpF4Mvkw","drag":true},{"title":"David Bowie - Starman","thumbnail":"https://i.ytimg.com/vi/tRcPA7Fzebw/default.jpg","videoid":"tRcPA7Fzebw","drag":true},{"title":"David Bowie - Rebel Rebel","thumbnail":"https://i.ytimg.com/vi/U16Xg_rQZkA/default.jpg","videoid":"U16Xg_rQZkA","drag":true}]} 
+],
+
+"public": false
+
+};
+
+
+
+
+ db.users.remove({"_id":ObjectId("5808ab74e3247dd13b1efd0b")})
+
+works
+
+db.users.insert(
+
+{
+bio: 'martinbio', 
+
+avatar: 'bubbagump', 
+
+username: 'mmartin', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5, 
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'mmartin@gmail.com' }, 
+albums:[], 
+})
+
+
+
+works
+db.users.insert(
+
+{
+bio: 'martinbio', 
+
+avatar: 'bubbagump', 
+
+username: 'mmartin', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5, 
+albums:[], 
+})
+
+
+songs:[{title:'Ellie Goulding - Love Me Like You Do (Official Video)',
+thumbnail:'https://i.ytiom/vi/AJtDXIazrMo/default.jpg',videoid:'AJtDXIazrMo',drag:true},
+	
+{title:'Make You Feel My Love - Lindsay Ell Cover', thumbnail:'https://i.ytimg/vi/elgwQVodcek/default.jpg',videoid:'elgwQVodcek',drag:true},
+	
+{title:'Shut Me Up (Acoustic Version) - Lindsay Ell - The Ell Sessions',thumbnail:'https://i.ytimg.com/vi/u-BqgHfeZss/default.jpg',videoid:'u-BqgHfeZss',drag:true},
+	
+{title:'Lindsay Ell - All Alright (Audio)',thumbnail:
+'https:i.ytimg.com/vi/AsnSYO59eWw/default.jpg',videoid:'AsnSYO59eWw',drag:true}]
+
+ },
+
+
+**************************************************************************************************************************************************************
+Works
+db.users.insert(
+
+{
+bio: 'martinbio', 
+
+avatar: 'bubbagump', 
+
+username: 'mmartin', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'mmartin@gmail.com' },  
+albums:[{listname:'111',status:'public', createdBy:'57077feec5f84a8c38697367',songs:[{title:'Ellie Goulding - Love Me Like You Do (Official Video)',
+thumbnail:'https://i.ytiom/vi/AJtDXIazrMo/default.jpg',videoid:'AJtDXIazrMo',drag:true},{title:'Make You Feel My Love - Lindsay Ell Cover', thumbnail:'https://i.ytimg/vi/elgwQVodcek/default.jpg',videoid:'elgwQVodcek',drag:true},{title:'Shut Me Up (Acoustic Version) - Lindsay Ell - The Ell Sessions',thumbnail:'https://i.ytimg.com/vi/u-BqgHfeZss/default.jpg',videoid:'u-BqgHfeZss',drag:true},
+	
+{title:'Lindsay Ell - All Alright (Audio)',thumbnail:
+'https:i.ytimg.com/vi/AsnSYO59eWw/default.jpg',videoid:'AsnSYO59eWw',drag:true}
+]}
+,
+{'listname':'222',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[{
+title:'AC/DC - Back InBlack',thumbnail:'https://i.ytimg.com/vi/pAgnJDJN4VA/default.jpg',videoid:'pAgnJDJN4VA', drag:true},
+{"title":"AC/DC - Highway to Hell","thumbnail":"https://i.ytimg.com/vi/gEPmA3USJdI/default.jpg","videoid":"gEPmA3USJdI","drag":true},
+{"title":"AC/DC - T.N.T.","thumbnail":"https://i.ytimg.com/vi/44XYEeD1A1U/default.jpg","videoid":"44XYEeD1A1U","drag":true},
+{"title":"AC/DC - Hells Bells","thumbnail":"https://i.ytimg.com/vi/etAIpkdhU9Q/default.jpg","videoid":"etAIpkdhU9Q","drag":true},
+{"title":"AC/DC - You Shook Me All Night Long (2012 Version)","thumbnail":"https://i.ytimg.com/vi/zakKvbIQ28o/default.jpg","videoid":"zakKvbIQ28o","drag":true}
+
+]}
+], 
+})
+
+
+receivedSongs
+statusSongs
+sentSongs
+
+db.your_collection.update({},
+                          {$set : {"new_field":1}},
+                          {upsert:false,
+                          multi:true}) 
+
+
+
+
+db.users.findOne({"_id":ObjectId("5828e18042c683284751c53b")}).update(
+
+{},
+{$set : {"new_field":1}},     
+{upsert:false,            
+multi:true}
+
+
+)
+
+
+db.users.findAndModify({
+query: { _id: ObjectId("5828e15642c683284751c539") },
+update: { $set : {"albums":{"votes":0} } },
+upsert: false
+})
+
+
+
+db.users.findAndModify({
+query: { _id: ObjectId("5828e18042c683284751c53b") },
+update: { $set : {"notifications": [] } },
+upsert: false
+})
+
+
+
+
+
+
+
+db.users.update({},
+                          {$set : {"notifications":[]}},
+                          {upsert:false,
+                          multi:true}) 
+
+
+db.users.update({"_id":ObjectId("5828e18042c683284751c53b")},
+{"$set": {"albums.$.votes":{} } 
+
+
+})
+
+
+
+ db.foo.update({"array.value" : 22}, {"$set" : {"array.$.text" : "blah"}})
+
+db.users.update({"_id":ObjectId("5828e18042c683284751c53b")}).albums[3] }, {"$set" : {"albums.$.votes" : "{}"} })
+
+
+
+
+db.users.update({},{ $addToSet: {albums:"votes":0 }},
+                {upsert:false,
+                multi:true}) 
+
+
+db.users.update({_id: ObjectId("585d1e1235b1d08c061891b7")},
+                          {$push : {"albums":{"votes":0} }},
+                          {upsert:false,
+                          multi:true}) 
+
+
+
+
+
+
+{id_:new ObjectId(),receivedBy:['ttom','bbill'],sentBy:ObjectId("5828e16b42c683284751c53a"),message:'received',data:{'listname':'222',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[{title:'AC/DC - Back InBlack',thumbnail:'https://i.ytimg.com/vi/pAgnJDJN4VA/default.jpg',videoid:'pAgnJDJN4VA', drag:true},{"title":"AC/DC - Highway to Hell","thumbnail":"https://i.ytimg.com/vi/gEPmA3USJdI/default.jpg","videoid":"gEPmA3USJdI","drag":true},
+{"title":"AC/DC - T.N.T.","thumbnail":"https://i.ytimg.com/vi/44XYEeD1A1U/default.jpg","videoid":"44XYEeD1A1U","drag":true},
+{"title":"AC/DC - Hells Bells","thumbnail":"https://i.ytimg.com/vi/etAIpkdhU9Q/default.jpg","videoid":"etAIpkdhU9Q","drag":true},
+{"title":"AC/DC - You Shook Me All Night Long (2012 Version)","thumbnail":"https://i.ytimg.com/vi/zakKvbIQ28o/default.jpg","videoid":"zakKvbIQ28o","drag":true},
+]}
+}
+
+
+
+
+
+title:'Ellie Goulding - Love Me Like You Do (Official Video)',
+thumbnail:'https://i.ytiom/vi/AJtDXIazrMo/default.jpg',videoid:'AJtDXIazrMo',drag:true}
+
+
+
+ var messageObj = {
+	        usersReceived:data.usersSent,
+			data: myAlbumObject,
+			message: 'received', 
+			stamp: 	data.sentBy,
+			userId: data.usersSent[x].uid
+		};
+
+
+
+works
+db.users.update({_id: ObjectId("5828e18042c683284751c53b") }, {"$push":{"notifications":{id_:new ObjectId(),receivedBy:['ttom','bbill'],sentBy:ObjectId("5828e16b42c683284751c53a"),message:'received',data:{'listname':'222',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[{title:'AC/DC - Back InBlack',thumbnail:'https://i.ytimg.com/vi/pAgnJDJN4VA/default.jpg',videoid:'pAgnJDJN4VA', drag:true},{"title":"AC/DC - Highway to Hell","thumbnail":"https://i.ytimg.com/vi/gEPmA3USJdI/default.jpg","videoid":"gEPmA3USJdI","drag":true},
+{"title":"AC/DC - T.N.T.","thumbnail":"https://i.ytimg.com/vi/44XYEeD1A1U/default.jpg","videoid":"44XYEeD1A1U","drag":true},
+{"title":"AC/DC - Hells Bells","thumbnail":"https://i.ytimg.com/vi/etAIpkdhU9Q/default.jpg","videoid":"etAIpkdhU9Q","drag":true},
+{"title":"AC/DC - You Shook Me All Night Long (2012 Version)","thumbnail":"https://i.ytimg.com/vi/zakKvbIQ28o/default.jpg","videoid":"zakKvbIQ28o","drag":true},
+]}
+}     }})
+
+db.users.update({_id: ObjectId("5828e18042c683284751c53b") }, {"$push":{"notifications":{id_:new ObjectId(),receivedBy:['ttom','bbill'],sentBy:ObjectId("5828e16b42c683284751c53a"),message:'received',data:{'listname':'444',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[
+{"title":"INXS - Need You Tonight","thumbnail":"https://i.ytimg.com/vi/PrZZfaDp02o/default.jpg","videoid":"PrZZfaDp02o","drag":true},
+{"title":"INXS - Mystify","thumbnail":"https://i.ytimg.com/vi/26ELh7P2ZtA/default.jpg","videoid":"26ELh7P2ZtA","drag":true},
+{"title":"INXS - New Sensation","thumbnail":"https://i.ytimg.com/vi/azfG5H-pCVg/default.jpg","videoid":"azfG5H-pCVg","drag":true},
+{"title":"INXS - Devil Inside","thumbnail":"https://i.ytimg.com/vi/hv_zJrO_ptk/default.jpg","videoid":"hv_zJrO_ptk","drag":true},
+{"title":"INXS  Live Baby Live","thumbnail":"https://i.ytimg.com/vi/WpHkEkQ6W1E/default.jpg","videoid":"WpHkEkQ6W1E","drag":true},
+{"title":"INXS - Beautiful Girl","thumbnail":"https://i.ytimg.com/vi/aH986VE47M8/default.jpg","videoid":"aH986VE47M8","drag":true},
+{"title":"INXS - Never Tear Us Apart ~ Wembley 1991","thumbnail":"https://i.ytimg.com/vi/Vr-I5xX_BFk/default.jpg","videoid":"Vr-I5xX_BFk","drag":true}
+]}
+}     }})
+
+
+
+db.cars.update({"_id":1}, {"$pop":{"mods":"headlights"}})
+
+db.foo.update({ _id: someId }, { $pop: { bar:1 } });
+
+
+works
+db.users.update({ _id: ObjectId("5828e18042c683284751c53b") }, { $pull: { notifications: {"id_" : ObjectId("584aa9cc77a1c30616b1b4c8")} } });
+db.users.update({ _id: ObjectId(" ") }, { $pull: { notifications: {"id_" : ObjectId("584aa9cc77a1c30616b1b4c8")} } });
+
+
+
+db.users.update({ _id: ObjectId("5828e18042c683284751c53b") }, { $pull: { albums: {"listname" : ObjectId("584aa9cc77a1c30616b1b4c8")} } });
+
+
+
+
+
+
+****WORKS!!!********
+db.users.update({'_id': ObjectId("5828e18042c683284751c53b")}, 
+                  {$set: { 'albums.3.votes': {} }} )
+
+
+db.users.update({'_id': ObjectId("5828e18042c683284751c53b")}, 
+                  {$set: { 'albums.3.votes': "" }} )
+
+
+
+
+db.users.update({'_id': ObjectId("5828e18042c683284751c53b")}, 
+                  {$set: { 'albums.1.votes': "" }} )
+
+
+
+db.users.update({'_id': ObjectId("5828e18042c683284751c53b")}, 
+                  {$set: { 'albums.0.votes': "" }} )
+
+
+
+
+bill
+db.users.update({'_id': ObjectId("585d44e835b1d08c061891b8")}, 
+                  {$set: { 'albums.1.votes': "" }} )
+585d44e835b1d08c061891b8
+****WORKS!!!********
+
+****works ****
+if i added a fucked up array by accident this is what i would need to destroy it by index only
+db.users.update({ '_id': ObjectId("5828e18042c683284751c53b")}, {$unset : {"albums.3" : 0 }})
+db.users.update({ '_id': ObjectId("5828e18042c683284751c53b")}, {$pull : {"albums" : null}})
+***works****
+
+
+
+
+
+********WORKS!!!*********
+
+db.users.find(
+    { 'albums.auid': '5861199e16f425080d40c0b9' },
+    {   "albums.$": 1 }
+)
+
+
+
+martin
+
+db.users.find(
+   { 'albums.auid': '5861199e16f425080d40c0b9' },
+    { '_id': "5828e18042c683284751c53b",  "albums.$": 1 }
+)
+
+
+
+********WORKS!!!*********
+
+
+
+
+
+********WORKS!!!************
+
+bill
+db.users.find(
+   { 'albums.auid': '5861199e16f425080d40c0b9' },
+    { '_id': "585d44e835b1d08c061891b8",  "albums.$": 1 }
+)
+
+db.users.find(
+   { 'albums.auid': '586118d472631ff4258ff78b' },
+    { '_id': "586118d472631ff4258ff78b",  "albums.$": 1 }
+)
+
+
+
+
+
+tom
+db.users.find(
+   { 'albums.auid': '584e9a4cfba25c3cede9b6c1' },                   
+    { '_id': "5828e16b42c683284751c53a",  "albums.$": 1 }
+)
+
+
+
+jim
+
+db.users.find(
+   { 'albums.auid': '584e9a4cfba25c3cede9b6c1' },                   
+    { '_id': "584e9a4cfba25c3cede9b6c1",  "albums.$": 1 }
+)
+
+
+********WORKS!!!************
+
+
+
+
+
+
+remaininVotes:
+
+votes:{
+
+votedby: ['32332232113311a'],
+votes:5,
+votedalbumid:'32323232' 
+
+}
+
+
+
+
+db.users.insert(
+
+{
+bio: 'martinbio', 
+
+avatar: 'bubbagump', 
+
+username: 'mmartin', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'mmartin@gmail.com' },  
+albums:[], 
+})
+
+
+
+
+
+***************************************************************************************************************************************************************
+
+**********************************************************************************************************************************************************
+Works
+db.users.insert(
+
+{
+bio: 'tombio', 
+
+avatar: 'bubbagump', 
+
+username: 'ttom', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'ttom@gmail.com' },  
+albums:[{listname:'333',status:'private', createdBy:'57077feec5f84a8c38697367',songs:[{"title":"David Bowie – Space Oddity [OFFICIAL VIDEO]","thumbnail":"https://i.ytimg.com/vi/iYYRH4apXDo/default.jpg","videoid":"iYYRH4apXDo","drag":true},{"title":"David Bowie - Heroes",
+	"thumbnail":"https://i.ytimg.com/vi/Tgcc5V9Hu3g/default.jpg","videoid":"Tgcc5V9Hu3g","drag":true},{"title":"David Bowie - Let's Dance","thumbnail":"https://i.ytimg.com/vi/N4d7Wp9kKjA/default.jpg","videoid":"N4d7Wp9kKjA","drag":true},{"title":"David Bowie - Modern Love","thumbnail":"https://i.ytimg.com/vi/1hDbpF4Mvkw/default.jpg","videoid":"1hDbpF4Mvkw","drag":true},{"title":"David Bowie - Starman","thumbnail":"https://i.ytimg.com/vi/tRcPA7Fzebw/default.jpg","videoid":"tRcPA7Fzebw","drag":true},{"title":"David Bowie - Rebel Rebel","thumbnail":"https://i.ytimg.com/vi/U16Xg_rQZkA/default.jpg","videoid":"U16Xg_rQZkA","drag":true}
+]}
+,
+{'listname':'444',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[
+{"title":"INXS - Need You Tonight","thumbnail":"https://i.ytimg.com/vi/PrZZfaDp02o/default.jpg","videoid":"PrZZfaDp02o","drag":true},
+{"title":"INXS - Mystify","thumbnail":"https://i.ytimg.com/vi/26ELh7P2ZtA/default.jpg","videoid":"26ELh7P2ZtA","drag":true},
+{"title":"INXS - New Sensation","thumbnail":"https://i.ytimg.com/vi/azfG5H-pCVg/default.jpg","videoid":"azfG5H-pCVg","drag":true},
+{"title":"INXS - Devil Inside","thumbnail":"https://i.ytimg.com/vi/hv_zJrO_ptk/default.jpg","videoid":"hv_zJrO_ptk","drag":true},
+{"title":"INXS  Live Baby Live","thumbnail":"https://i.ytimg.com/vi/WpHkEkQ6W1E/default.jpg","videoid":"WpHkEkQ6W1E","drag":true},
+{"title":"INXS - Beautiful Girl","thumbnail":"https://i.ytimg.com/vi/aH986VE47M8/default.jpg","videoid":"aH986VE47M8","drag":true},
+{"title":"INXS - Never Tear Us Apart ~ Wembley 1991","thumbnail":"https://i.ytimg.com/vi/Vr-I5xX_BFk/default.jpg","videoid":"Vr-I5xX_BFk","drag":true}
+]}
+], 
+})
+
+
+
+
+
+db.users.insert(
+
+{
+bio: 'tombio', 
+
+avatar: 'bubbagump', 
+
+username: 'ttom', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'ttom@gmail.com' },  
+albums:[], 
+})
+
+
+
+
+
+db.users.insert(
+
+{
+bio: 'jimbio', 
+
+avatar: 'bubbagump', 
+
+username: 'jjim', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'jjim@gmail.com' },  
+albums:[],
+notifications:[] 
+})
+
+
+//admin user will hold all MPB i.e shared collections
+
+db.users.insert(
+
+{
+bio: 'cadminbio', 
+
+avatar: 'bubbagump', 
+
+username: 'cadmin', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'ccadmin@gmail.com' },  
+albums:[],
+notifications:[] 
+})
+
+
+584f1709fba25c3cede9b6c2   current _id for cadmin 
+
+
+
+
+
+
+
+db.users.insert(
+
+{
+bio: 'bbillbio', 
+
+avatar: 'bubbagump', 
+
+username: 'bbill', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'bbill@gmail.com' },  
+albums:[],
+notifications:[] 
+})
+
+
+
+
+
+*********************************************************************************************************************************************************************
+
+
+Works
+
+db.users.insert(
+
+{
+bio: 'sambio', 
+
+avatar: 'bubbagump', 
+
+username: 'ssam', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'ssam@gmail.com' },  
+albums:[{listname:'555',status:'public', createdBy:'57077feec5f84a8c38697367',songs:[
+{"title":"Electric Light Orchestra - Mr  Blue Sky","thumbnail":"https://i.ytimg.com/vi/bjPqsDU0j2I/default.jpg","videoid":"bjPqsDU0j2I","drag":true},
+{"title":"ELO - Livin' Thing (1977)","thumbnail":"https://i.ytimg.com/vi/glLkNo60t3w/default.jpg","videoid":"glLkNo60t3w","drag":true},
+{"title":"ELO - Mr. Blue Sky (Audio)","thumbnail":"https://i.ytimg.com/vi/s7dTBoW5H9k/default.jpg","videoid":"s7dTBoW5H9k","drag":true},
+{"title":"ELO - Don't Bring Me Down (with lyrics)","thumbnail":"https://i.ytimg.com/vi/DxELf7F5xlY/default.jpg","videoid":"DxELf7F5xlY","drag":true},
+{"title":"ELO - When I Was A Boy (Jeff Lynne’s ELO – Video)","thumbnail":"https://i.ytimg.com/vi/tM34A80RTv4/default.jpg","videoid":"tM34A80RTv4","drag":true},{"title":"Jeff Lynne - Turn To Stone - ELO","thumbnail":"https://i.ytimg.com/vi/oMmRyyU0SOo/default.jpg","videoid":"oMmRyyU0SOo","drag":true}
+]}
+,
+{'listname':'666',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[
+{"title":"Queen - We Will Rock You (Fast) [Official Lyric Video]","thumbnail":"https://i.ytimg.com/vi/Ekm6WtKwQos/default.jpg","videoid":"Ekm6WtKwQos","drag":true},{"title":"Queen - Bohemian Rhapsody (Official Video)","thumbnail":"https://i.ytimg.com/vi/fJ9rUzIMcZQ/default.jpg","videoid":"fJ9rUzIMcZQ","drag":true},
+{"title":"Queen - I Want To Break Free (Official Video)","thumbnail":"https://i.ytimg.com/vi/f4Mc-NYPHaQ/default.jpg","videoid":"f4Mc-NYPHaQ","drag":true},{"title":"Queen - Somebody To Love (Official Video)","thumbnail":"https://i.ytimg.com/vi/kijpcUv-b8M/default.jpg","videoid":"kijpcUv-b8M","drag":true},
+{"title":"Queen - Under Pressure (Official Video)","thumbnail":"https://i.ytimg.com/vi/a01QQZyl-_I/default.jpg","videoid":"a01QQZyl-_I","drag":true},
+{"title":"Queen - Another One Bites the Dust (Official Video)","thumbnail":"https://i.ytimg.com/vi/rY0WxgSXdEE/default.jpg","videoid":"rY0WxgSXdEE","drag":true}
+
+]}
+], 
+})
+
+
+
+
+
+
+
+
+
+
+
+************************************************************************************************************************************
+Works
+db.users.insert(
+
+{
+bio: 'billbio', 
+
+avatar: 'bubbagump', 
+
+username: 'bbill', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'bbill@gmail.com' },  
+albums:[{listname:'777',status:'public', createdBy:'57077feec5f84a8c38697367',songs:[
+{"title":"Pink Floyd - Wish You Were Here","thumbnail":"https://i.ytimg.com/vi/IXdNnw99-Ic/default.jpg","videoid":"IXdNnw99-Ic","drag":true},
+{"title":"Pink Floyd - Another Brick In The Wall (HQ)","thumbnail":"https://i.ytimg.com/vi/YR5ApYxkU-U/default.jpg","videoid":"YR5ApYxkU-U","drag":true},
+{"title":"Pink Floyd - Learning To Fly (Official Music Video)","thumbnail":"https://i.ytimg.com/vi/nVhNCTH8pDs/default.jpg","videoid":"nVhNCTH8pDs","drag":true},{"title":"Pink Floyd - \"Hey You\"","thumbnail":"https://i.ytimg.com/vi/TFjmvfRvjTc/default.jpg","videoid":"TFjmvfRvjTc","drag":true},
+{"title":"Pink Floyd - Dark Side Of The Moon","thumbnail":"https://i.ytimg.com/vi/DLOth-BuCNY/default.jpg","videoid":"DLOth-BuCNY","drag":true},
+{"title":"Pink Floyd - \" MOTHER \" The Wall 1980","thumbnail":"https://i.ytimg.com/vi/73UMWoXRbjg/default.jpg","videoid":"73UMWoXRbjg","drag":true}
+]}
+,
+{'listname':'888',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[
+{"title":"The Beatles - Hey Jude","thumbnail":"https://i.ytimg.com/vi/A_MjCqQoLLA/default.jpg","videoid":"A_MjCqQoLLA","drag":true},
+{"title":"The Beatles - I Want To Hold Your Hand - Performed Live On The Ed Sullivan Show 2/9/64","thumbnail":"https://i.ytimg.com/vi/jenWdylTtzs/default.jpg","videoid":"jenWdylTtzs","drag":true},
+{"title":"The Beatles - Penny Lane","thumbnail":"https://i.ytimg.com/vi/S-rB0pHI9fU/default.jpg","videoid":"S-rB0pHI9fU","drag":true},
+{"title":"The Beatles - While My Guitar Gently Weeps","thumbnail":"https://i.ytimg.com/vi/VJDJs9dumZI/default.jpg","videoid":"VJDJs9dumZI","drag":true},
+{"title":"The Beatles - Something","thumbnail":"https://i.ytimg.com/vi/0xeu-mN-NQs/default.jpg","videoid":"0xeu-mN-NQs","drag":true},
+{"title":"The Beatles - Free As A Bird","thumbnail":"https://i.ytimg.com/vi/ODIvONHPqpk/default.jpg","videoid":"ODIvONHPqpk","drag":true},
+{"title":"Here Comes The Sun - The Beatles Tribute","thumbnail":"https://i.ytimg.com/vi/bgiQD56eWDk/default.jpg","videoid":"bgiQD56eWDk","drag":true}
+
+]}
+], 
+})
+
+
+
+
+db.users.insert(
+
+{
+bio: 'billbio', 
+
+avatar: 'bubbagump', 
+
+username: 'bbill', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'bbill@gmail.com' },  
+albums:[], 
+})
+
+
+
+*************************************************************************************************************************************************
+
+
+db.users.insert(
+
+{
+bio: 'billbio', 
+
+avatar: 'bubbagump', 
+
+username: 'bbill', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'bbill@gmail.com' },  
+albums:{[{listname:'1010',status:'public', createdBy:'57077feec5f84a8c38697367',songs:[
+{"title":"Pink Floyd - Wish You Were Here","thumbnail":"https://i.ytimg.com/vi/IXdNnw99-Ic/default.jpg","videoid":"IXdNnw99-Ic","drag":true},
+{"title":"Pink Floyd - Another Brick In The Wall (HQ)","thumbnail":"https://i.ytimg.com/vi/YR5ApYxkU-U/default.jpg","videoid":"YR5ApYxkU-U","drag":true},
+{"title":"Pink Floyd - Learning To Fly (Official Music Video)","thumbnail":"https://i.ytimg.com/vi/nVhNCTH8pDs/default.jpg","videoid":"nVhNCTH8pDs","drag":true},{"title":"Pink Floyd - \"Hey You\"","thumbnail":"https://i.ytimg.com/vi/TFjmvfRvjTc/default.jpg","videoid":"TFjmvfRvjTc","drag":true},
+{"title":"Pink Floyd - Dark Side Of The Moon","thumbnail":"https://i.ytimg.com/vi/DLOth-BuCNY/default.jpg","videoid":"DLOth-BuCNY","drag":true},
+{"title":"Pink Floyd - \" MOTHER \" The Wall 1980","thumbnail":"https://i.ytimg.com/vi/73UMWoXRbjg/default.jpg","videoid":"73UMWoXRbjg","drag":true}
+]}
+,
+{'listname':'888',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[
+{"title":"The Beatles - Hey Jude","thumbnail":"https://i.ytimg.com/vi/A_MjCqQoLLA/default.jpg","videoid":"A_MjCqQoLLA","drag":true},
+{"title":"The Beatles - I Want To Hold Your Hand - Performed Live On The Ed Sullivan Show 2/9/64","thumbnail":"https://i.ytimg.com/vi/jenWdylTtzs/default.jpg","videoid":"jenWdylTtzs","drag":true},
+{"title":"The Beatles - Penny Lane","thumbnail":"https://i.ytimg.com/vi/S-rB0pHI9fU/default.jpg","videoid":"S-rB0pHI9fU","drag":true},
+{"title":"The Beatles - While My Guitar Gently Weeps","thumbnail":"https://i.ytimg.com/vi/VJDJs9dumZI/default.jpg","videoid":"VJDJs9dumZI","drag":true},
+{"title":"The Beatles - Something","thumbnail":"https://i.ytimg.com/vi/0xeu-mN-NQs/default.jpg","videoid":"0xeu-mN-NQs","drag":true},
+{"title":"The Beatles - Free As A Bird","thumbnail":"https://i.ytimg.com/vi/ODIvONHPqpk/default.jpg","videoid":"ODIvONHPqpk","drag":true},
+{"title":"Here Comes The Sun - The Beatles Tribute","thumbnail":"https://i.ytimg.com/vi/bgiQD56eWDk/default.jpg","videoid":"bgiQD56eWDk","drag":true}
+
+]}
+]}, 
+})
+
+
+
+
+
+db.users.insert(
+
+{
+bio: 'billbio', 
+
+avatar: 'bubbagump', 
+
+username: 'bbill', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'bbill@gmail.com' },  
+albums:{[ ,songs:[
+{"title":"Pink Floyd - Wish You Were Here","thumbnail":"https://i.ytimg.com/vi/IXdNnw99-Ic/default.jpg","videoid":"IXdNnw99-Ic","drag":true},
+{"title":"Pink Floyd - Another Brick In The Wall (HQ)","thumbnail":"https://i.ytimg.com/vi/YR5ApYxkU-U/default.jpg","videoid":"YR5ApYxkU-U","drag":true},
+{"title":"Pink Floyd - Learning To Fly (Official Music Video)","thumbnail":"https://i.ytimg.com/vi/nVhNCTH8pDs/default.jpg","videoid":"nVhNCTH8pDs","drag":true},{"title":"Pink Floyd - \"Hey You\"","thumbnail":"https://i.ytimg.com/vi/TFjmvfRvjTc/default.jpg","videoid":"TFjmvfRvjTc","drag":true},
+{"title":"Pink Floyd - Dark Side Of The Moon","thumbnail":"https://i.ytimg.com/vi/DLOth-BuCNY/default.jpg","videoid":"DLOth-BuCNY","drag":true},
+{"title":"Pink Floyd - \" MOTHER \" The Wall 1980","thumbnail":"https://i.ytimg.com/vi/73UMWoXRbjg/default.jpg","videoid":"73UMWoXRbjg","drag":true}
+]}
+,
+{'listname':'888',status:'public', createdBy:'57077feec5f84a8c38697367', "songs":[
+{"title":"The Beatles - Hey Jude","thumbnail":"https://i.ytimg.com/vi/A_MjCqQoLLA/default.jpg","videoid":"A_MjCqQoLLA","drag":true},
+{"title":"The Beatles - I Want To Hold Your Hand - Performed Live On The Ed Sullivan Show 2/9/64","thumbnail":"https://i.ytimg.com/vi/jenWdylTtzs/default.jpg","videoid":"jenWdylTtzs","drag":true},
+{"title":"The Beatles - Penny Lane","thumbnail":"https://i.ytimg.com/vi/S-rB0pHI9fU/default.jpg","videoid":"S-rB0pHI9fU","drag":true},
+{"title":"The Beatles - While My Guitar Gently Weeps","thumbnail":"https://i.ytimg.com/vi/VJDJs9dumZI/default.jpg","videoid":"VJDJs9dumZI","drag":true},
+{"title":"The Beatles - Something","thumbnail":"https://i.ytimg.com/vi/0xeu-mN-NQs/default.jpg","videoid":"0xeu-mN-NQs","drag":true},
+{"title":"The Beatles - Free As A Bird","thumbnail":"https://i.ytimg.com/vi/ODIvONHPqpk/default.jpg","videoid":"ODIvONHPqpk","drag":true},
+{"title":"Here Comes The Sun - The Beatles Tribute","thumbnail":"https://i.ytimg.com/vi/bgiQD56eWDk/default.jpg","videoid":"bgiQD56eWDk","drag":true}
+
+]}
+]}, 
+})
+
+
+
+
+
+
+db.users.insert(
+
+{
+bio: 'stevebio', 
+
+avatar: 'stevegump', 
+
+username: 'ssteve', 
+
+bonusPoints: 0, 
+
+hasSubmitted: false, 
+
+remainingVotes: 5,
+basic: {password:'$2a$08$nq/m0434Dkvaa7H.DU7fSun19wtK895wDlvuhG3bUKAjcPCyC7aoW', email:'bbill@gmail.com' },  
+albums:{records:[listname:'1010',status:'public', createdBy:'57077feec5f84a8c38697367']
+
+}
+
+
+
+]}
+
+})
+
+
+ db.users.remove({"_id":ObjectId("5808ab74e3247dd13b1efd0b")})
+
+
+
+"_id" : ObjectId("5809f3d6411507a09bfc9d75")
+
+
+
+
+
+
+
+
+
+the album info to be updated is ...{"listname":"dasdds","songs":[{"title":"INXS - Need You Tonight","thumbnail":"https://i.ytimg.com/vi/PrZZfaDp02o/defau
+lt.jpg","videoid":"PrZZfaDp02o","drag":true},{"title":"INXS - Mystify","thumbnail":"https://i.ytimg.com/vi/26ELh7P2ZtA/default.jpg","videoid":"26ELh7P2Zt
+A","drag":true},{"title":"INXS - New Sensation","thumbnail":"https://i.ytimg.com/vi/azfG5H-pCVg/default.jpg","videoid":"azfG5H-pCVg","drag":true},{"title
+":"INXS - Devil Inside","thumbnail":"https://i.ytimg.com/vi/hv_zJrO_ptk/default.jpg","videoid":"hv_zJrO_ptk","drag":true},{"title":"INXS  Live Baby Live"
+,"thumbnail":"https://i.ytimg.com/vi/WpHkEkQ6W1E/default.jpg","videoid":"WpHkEkQ6W1E","drag":true},{"title":"INXS - Beautiful Girl","thumbnail":"https://
+i.ytimg.com/vi/aH986VE47M8/default.jpg","videoid":"aH986VE47M8","drag":true},{"title":"INXS - Never Tear Us Apart ~ Wembley 1991","thumbnail":"https://i.
+ytimg.com/vi/Vr-I5xX_BFk/default.jpg","videoid":"Vr-I5xX_BFk","drag":true}]}
+
+
+
+
+
+
+
+
+
+the album info to be updated is ...{"listname":"el1","songs":[{"title":"Electric Light Orchestra - Mr  Blue Sky","thumbnail":"https://i.ytimg.com/vi/bjPq
+sDU0j2I/default.jpg","videoid":"bjPqsDU0j2I","drag":true},{"title":"ELO - Livin' Thing (1977)","thumbnail":"https://i.ytimg.com/vi/glLkNo60t3w/default.jp
+g","videoid":"glLkNo60t3w","drag":true},{"title":"ELO - Mr. Blue Sky (Audio)","thumbnail":"https://i.ytimg.com/vi/s7dTBoW5H9k/default.jpg","videoid":"s7d
+TBoW5H9k","drag":true},{"title":"ELO - Don't Bring Me Down (with lyrics)","thumbnail":"https://i.ytimg.com/vi/DxELf7F5xlY/default.jpg","videoid":"DxELf7F
+5xlY","drag":true},{"title":"ELO - When I Was A Boy (Jeff Lynne’s ELO – Video)","thumbnail":"https://i.ytimg.com/vi/tM34A80RTv4/default.jpg","videoid":"t
+M34A80RTv4","drag":true},{"title":"Jeff Lynne - Turn To Stone - ELO","thumbnail":"https://i.ytimg.com/vi/oMmRyyU0SOo/default.jpg","videoid":"oMmRyyU0SOo"
+,"drag":true}]}
+
+
+
+
+the album info to be updated is ...{"listname":"queen","songs":[{"title":"Queen - We Will Rock You (Fast) [Official Lyric Video]","thumbnail":"https://i.
+ytimg.com/vi/Ekm6WtKwQos/default.jpg","videoid":"Ekm6WtKwQos","drag":true},{"title":"Queen - Bohemian Rhapsody (Official Video)","thumbnail":"https://i.y
+timg.com/vi/fJ9rUzIMcZQ/default.jpg","videoid":"fJ9rUzIMcZQ","drag":true},{"title":"Queen - I Want To Break Free (Official Video)","thumbnail":"https://i
+.ytimg.com/vi/f4Mc-NYPHaQ/default.jpg","videoid":"f4Mc-NYPHaQ","drag":true},{"title":"Queen - Somebody To Love (Official Video)","thumbnail":"https://i.y
+timg.com/vi/kijpcUv-b8M/default.jpg","videoid":"kijpcUv-b8M","drag":true},{"title":"Queen - Under Pressure (Official Video)","thumbnail":"https://i.ytimg
+.com/vi/a01QQZyl-_I/default.jpg","videoid":"a01QQZyl-_I","drag":true},{"title":"Queen - Another One Bites the Dust (Official Video)","thumbnail":"https:/
+/i.ytimg.com/vi/rY0WxgSXdEE/default.jpg","videoid":"rY0WxgSXdEE","drag":true}]}
+
+
+
+the album info to be updated is ...{"listname":"pink floyd","songs":[{"title":"Pink Floyd - Wish You Were Here","thumbnail":"https://i.ytimg.com/vi/IXdNn
+w99-Ic/default.jpg","videoid":"IXdNnw99-Ic","drag":true},{"title":"Pink Floyd - Another Brick In The Wall (HQ)","thumbnail":"https://i.ytimg.com/vi/YR5Ap
+YxkU-U/default.jpg","videoid":"YR5ApYxkU-U","drag":true},{"title":"Pink Floyd - Learning To Fly (Official Music Video)","thumbnail":"https://i.ytimg.com/
+vi/nVhNCTH8pDs/default.jpg","videoid":"nVhNCTH8pDs","drag":true},{"title":"Pink Floyd - \"Hey You\"","thumbnail":"https://i.ytimg.com/vi/TFjmvfRvjTc/defa
+ult.jpg","videoid":"TFjmvfRvjTc","drag":true},{"title":"Pink Floyd - Dark Side Of The Moon","thumbnail":"https://i.ytimg.com/vi/DLOth-BuCNY/default.jpg",
+"videoid":"DLOth-BuCNY","drag":true},{"title":"Pink Floyd - \" MOTHER \" The Wall 1980","thumbnail":"https://i.ytimg.com/vi/73UMWoXRbjg/default.jpg","vid
+eoid":"73UMWoXRbjg","drag":true}]}
+
+
+
+the album info to be updated is ...{"listname":"the beatles","songs":[{"title":"The Beatles - Hey Jude","thumbnail":"https://i.ytimg.com/vi/A_MjCqQoLLA/d
+efault.jpg","videoid":"A_MjCqQoLLA","drag":true},{"title":"The Beatles - I Want To Hold Your Hand - Performed Live On The Ed Sullivan Show 2/9/64","thumb
+nail":"https://i.ytimg.com/vi/jenWdylTtzs/default.jpg","videoid":"jenWdylTtzs","drag":true},{"title":"The Beatles - Penny Lane","thumbnail":"https://i.yt
+img.com/vi/S-rB0pHI9fU/default.jpg","videoid":"S-rB0pHI9fU","drag":true},{"title":"The Beatles - While My Guitar Gently Weeps","thumbnail":"https://i.yti
+mg.com/vi/VJDJs9dumZI/default.jpg","videoid":"VJDJs9dumZI","drag":true},{"title":"The Beatles - Something","thumbnail":"https://i.ytimg.com/vi/0xeu-mN-NQ
+s/default.jpg","videoid":"0xeu-mN-NQs","drag":true},{"title":"The Beatles - Free As A Bird","thumbnail":"https://i.ytimg.com/vi/ODIvONHPqpk/default.jpg",
+"videoid":"ODIvONHPqpk","drag":true},{"title":"Here Comes The Sun - The Beatles Tribute","thumbnail":"https://i.ytimg.com/vi/bgiQD56eWDk/default.jpg","vi
+deoid":"bgiQD56eWDk","drag":true}]}
+the users info to be updated is ...[{"id":3,"label":"bwhite"}]
+
+
+
+
+
+doesnt work
+db.users.insert({
+   _id: ObjectId("7df78ad8902c"),
+   title: 'MongoDB Overview', 
+   description: 'MongoDB is no sql database',
+   by: 'tutorials point',
+   url: 'http://www.tutorialspoint.com',
+   tags: ['mongodb', 'database', 'NoSQL'],
+   likes: 100
+})
+
+
+ works
+db.users.insert({
+   title: 'MongoDB Overview', 
+   description: 'MongoDB is no sql database',
+   by: 'tutorials point',
+   url: 'http://www.tutorialspoint.com',
+   tags: ['mongodb', 'database', 'NoSQL'],
+   likes: 100
+})
+
+
+
+
+**********  USER *******************
+{"title":"AC/DC - Back In Black","thumbnail":"https://i.ytimg.com/vi/pAgnJDJN4VA/default.jpg","videoid":"pAgnJDJN4VA","
+
+
+the album info to be updated is ...{"listname":"666","songs":[{"title":"Pink Floyd - Wish You Were Here","thumbnail":"https://i.ytimg.com/vi/IXdNnw99-Ic/
+default.jpg","videoid":"IXdNnw99-Ic","drag":true},{"title":"Pink Floyd - Learning To Fly (Official Music Video)","thumbnail":"https://i.ytimg.com/vi/nVhN
+CTH8pDs/default.jpg","videoid":"nVhNCTH8pDs","drag":true},{"title":"Pink Floyd - \"Hey You\"","thumbnail":"https://i.ytimg.com/vi/TFjmvfRvjTc/default.jpg
+","videoid":"TFjmvfRvjTc","drag":true},{"title":"Shine On You Crazy Diamond (Full Length: Parts I - IX) - Pink Floyd","thumbnail":"https://i.ytimg.com/vi
+/8UXircX3VdM/default.jpg","videoid":"8UXircX3VdM","drag":true},{"title":"Pink Floyd - Dark Side Of The Moon","thumbnail":"https://i.ytimg.com/vi/DLOth-Bu
+CNY/default.jpg","videoid":"DLOth-BuCNY","drag":true}]}
+
+
+
+the album info to be updated is ...{"listname":"555","songs":[{"title":"Lynyrd Skynyrd-Free bird","thumbnail":"https://i.ytimg.com/vi/np0solnL1XY/default
+.jpg","videoid":"np0solnL1XY","drag":true},{"title":"LYNYRD SKYNYRD - Sweet Home Alabama","thumbnail":"https://i.ytimg.com/vi/IwWUOmk7wO0/default.jpg","v
+ideoid":"IwWUOmk7wO0","drag":true},{"title":"Gimme Three Steps-Lynyrd Skynyrd","thumbnail":"https://i.ytimg.com/vi/SM3jgkChV6M/default.jpg","videoid":"SM
+3jgkChV6M","drag":true},{"title":"Lynyrd Skynyrd-I Need You","thumbnail":"https://i.ytimg.com/vi/usulbsg2e5g/default.jpg","videoid":"usulbsg2e5g","drag":
+true},{"title":"Lynyrd Skynyrd - Tuesday's Gone","thumbnail":"https://i.ytimg.com/vi/iFNbTdLfBwQ/default.jpg","videoid":"iFNbTdLfBwQ","drag":true},{"titl
+e":"Call Me The Breeze Lynard Skynard","thumbnail":"https://i.ytimg.com/vi/AaTZkIInYNw/default.jpg","videoid":"AaTZkIInYNw","drag":true}]}
+the users info to be updated is ...[{"id":1,"label":"ssmith"},{"id":2,"label":"tblack"}]
+
+
+
+the album info to be updated is ...{"listname":"333","songs":[{"title":"David Bowie – Space Oddity [OFFICIAL VIDEO]","thumbnail":"https://i.ytimg.com/vi/
+iYYRH4apXDo/default.jpg","videoid":"iYYRH4apXDo","drag":true},{"title":"David Bowie - Heroes","thumbnail":"https://i.ytimg.com/vi/Tgcc5V9Hu3g/default.jpg
+","videoid":"Tgcc5V9Hu3g","drag":true},{"title":"David Bowie - Let's Dance","thumbnail":"https://i.ytimg.com/vi/N4d7Wp9kKjA/default.jpg","videoid":"N4d7W
+p9kKjA","drag":true},{"title":"David Bowie - Modern Love","thumbnail":"https://i.ytimg.com/vi/1hDbpF4Mvkw/default.jpg","videoid":"1hDbpF4Mvkw","drag":tru
+e},{"title":"David Bowie - Starman","thumbnail":"https://i.ytimg.com/vi/tRcPA7Fzebw/default.jpg","videoid":"tRcPA7Fzebw","drag":true},{"title":"David Bow
+ie - Rebel Rebel","thumbnail":"https://i.ytimg.com/vi/U16Xg_rQZkA/default.jpg","videoid":"U16Xg_rQZkA","drag":true}]}
+the users info to be updated is ...[{"id":1,"label":"ssmith"},{"id":3,"label":"bwhite"}]
+
+
+
+the album info to be updated is ...{"listname":"222","songs":[{"title":"AC/DC - Back In Black","thumbnail":"https://i.ytimg.com/vi/pAgnJDJN4VA/default.jp
+g","videoid":"pAgnJDJN4VA","drag":true},{"title":"AC/DC - Highway to Hell","thumbnail":"https://i.ytimg.com/vi/gEPmA3USJdI/default.jpg","videoid":"gEPmA3
+USJdI","drag":true},{"title":"AC/DC - T.N.T.","thumbnail":"https://i.ytimg.com/vi/44XYEeD1A1U/default.jpg","videoid":"44XYEeD1A1U","drag":true},{"title":
+"AC/DC - Hells Bells","thumbnail":"https://i.ytimg.com/vi/etAIpkdhU9Q/default.jpg","videoid":"etAIpkdhU9Q","drag":true},{"title":"AC/DC - You Shook Me Al
+l Night Long (2012 Version)","thumbnail":"https://i.ytimg.com/vi/zakKvbIQ28o/default.jpg","videoid":"zakKvbIQ28o","drag":true}]}
+
+album info to be updated is ...{"listname":"111","songs":[{"title":"Ellie Goulding - Love Me Like You Do (Official Video)","thumbnail":"https://i.yti
+om/vi/AJtDXIazrMo/default.jpg","videoid":"AJtDXIazrMo","drag":true},{"title":"Make You Feel My Love - Lindsay Ell Cover","thumbnail":"https://i.ytimg
+/vi/elgwQVodcek/default.jpg","videoid":"elgwQVodcek","drag":true},{"title":"Shut Me Up (Acoustic Version) - Lindsay Ell - The Ell Sessions","thumbnai
+https://i.ytimg.com/vi/u-BqgHfeZss/default.jpg","videoid":"u-BqgHfeZss","drag":true},{"title":"Lindsay Ell - All Alright (Audio)","thumbnail":"https:
+ytimg.com/vi/AsnSYO59eWw/default.jpg","videoid":"AsnSYO59eWw","drag":true}]}
+
+
+
+
+
+
+
+
+
+
+{ "_id" : ObjectId("5707803fed975c103f34d4c3"), "bio" : "smithbio", "avatar" : "smithman", "username" : "ssmith", "bonusPoints" : 0, "hasSubmitted" : fal
+se, "remainingVotes" : 5, "basic" : { "password" : "$2a$08$nfFpGwwmfT8r7nzMNQvczutXJHMa9rLR91PYJcTvSQA4fFZyF9vnq", "email" : "smith@gmail.com" }, "__v" :
+ 0 }
+{ "_id" : ObjectId("570780c6456744603e85f697"), "bio" : "tblack", "avatar" : "blackman", "username" : "tblack", "bonusPoints" : 0, "hasSubmitted" : false
+, "remainingVotes" : 5, "basic" : { "password" : "myblack", "email" : "tblack@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("5707812f40222b5c34cf09a9"), "bio" : "bwhite", "avatar" : "whiteman", "username" : "bwhite", "bonusPoints" : 0, "hasSubmitted" : false
+, "remainingVotes" : 5, "basic" : { "password" : "mywhite", "email" : "bwhite@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("570781898d9595ac2128768e"), "bio" : "tclancy", "avatar" : "clancyman", "username" : "tclancy", "bonusPoints" : 0, "hasSubmitted" : fa
+lse, "remainingVotes" : 5, "basic" : { "password" : "myclancy", "email" : "tclancy@gmail.com" }, "__v" : 0 }
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}

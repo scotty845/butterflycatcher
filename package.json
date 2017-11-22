@@ -1,0 +1,20 @@
+{
+  "name": "butterflycatcher",
+  "version": "1.0.0",
+  "description": "Collect Media",
+  "main": "server.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "AngularJS"
+  ],
+  "author": "Scott Londer",
+  "license": "ISC"
+}

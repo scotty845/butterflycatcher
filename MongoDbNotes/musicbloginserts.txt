@@ -1,0 +1,131 @@
+
+db.questions.insert(
+
+
+ basic: {
+    email: 'slonder@gmail.com',
+    password: 'mypass'
+  },
+  username: 'slonder',
+  avatar: 'scotty',
+  bio: 'I like music',
+  remainingVotes: {type: Number, default: 5},
+  hasSubmitted: {type: Boolean, default: false},
+  bonusPoints: {type: Number, default: 0}
+  
+
+
+
+)
+
+
+
+db.users.insert(
+
+
+{
+"basic": {
+"email": "slonder@gmail.com",
+  "password": "mypass"
+ },
+
+"username": "slonder",
+ 
+"avatar": "scotty",
+  
+"bio": "my bio"  "remainingVotes": 5, 
+"hasSubmitted": "false",  
+"bonusPoints": 0
+ 
+
+
+}
+)
+
+db.surveyadmin.insert(
+   {     
+      'uname': 'slonder',
+      'pass':  'mypass',
+      "createDate" : ISODate("2014-10-01T00:00:00Z"),
+      "updateDate" : ISODate("2014-10-01T00:00:00Z")
+
+    }
+ )   
+
+
+
+db.users.insert(
+
+
+ {
+"basic": {
+"email": "slonder@gmail.com",
+  "password": "mypass"
+ }
+ }
+)
+
+db.users.insert(
+
+
+ {
+"basic": {
+"email": "slonder@gmail.com",
+  "password": "mypass"
+ },
+
+"username": "slonder",
+ 
+"avatar": "scotty",
+  
+"bio": "my bio"  
+}
+)
+
+
+db.users.insert(
+
+
+ {
+"basic.email":"slonder@gmail.com",
+"basic.password":"mypass",
+"username": "slonder",
+ 
+"avatar": "scotty",
+  
+"bio": "my bio"  
+}
+)
+
+
+db.questions.insert(
+   {
+      "question" : {
+      "questionText" : "What is your favorite color?",
+      "createDate" : ISODate("2014-10-01T00:00:00Z"),
+      "updateDate" : ISODate("2014-10-01T00:00:00Z"),
+      "cretedBy"   : 1,
+      "answers" : [
+         {
+	    "answerText" : "red",
+            "auid":  ObjectId("56fe61835a84150425d00001")
+
+         },
+         {
+	    "answerText" : "green",
+	    "auid": ObjectId("56fe61835a84150425d00002")
+         },
+         {
+	    "answerText" : "blue",
+            "auid": ObjectId("56fe61835a84150425d00003")
+         },
+         {
+	    "answerText" : "orange",
+            "auid": ObjectId("56fe61835a84150425d00004")
+         }
+         
+      ]
+      
+      }
+   }
+)

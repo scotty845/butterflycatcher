@@ -1,0 +1,33 @@
+$2a$08$MPkGBF4.jw28WdMMCRsWUu6kEw6mPaVDmtOoEYxz4YQ97qsKWDWtu
+
+$2a$08$7837WJkzqqg2L9pukiTyTOmBUdMamjJCMGr8wGq4PcmtTdRl473oW
+
+$2a$08$Rn6/NtMSJQJLnSkUR0gm1.wIucGgeeFK8.YVxNBmqw/UaUMOX4B5m
+
+$2a$08$MKuZGgnXBxfnPvt4Qa3E..DnudzduzZv7KxlsuIBJH.611cyOU6Ca
+
+
+$2a$08$YOjFU6J/HiQgcmallD6B.O1nhExs2S0fGsT3e62dCTfvTY9.0iXdu
+
+
+salted and hashed with bcrypt
+$2a$10$Rh4oARxTrDW47FBKSeVF0uHTTRKnHh6H1JhUfkxnHn52qU.rZl1rO
+$2a$10$Zwcjqz7HVjFxNjdqU4oW1O985Q6N6HIaoUl6N6AkfGm8/zIDZw5Ki
+$2a$10$6zerpnFh8MgH839gr2RE9e9EU/.lw6darnQSWJnaJ7hkOl3eokegS
+
+$2a$08$57MUvlypieaYroqrwxhoT.4bHfB9vIDyxDU3KAxhL.TVRi94be7C.
+
+
+db.users.update(
+   { _id: ObjectId("57077feec5f84a8c38697367") },
+   { $set: { "basic.password": "$2a$08$DHXgdbue9LaMkk1vp5j9xeFXJXoEOUYEaD9BTHxZ5Ntw6GEWw2jre" } }
+)
+
+
+new Buffer('mybuba', 'binary')
+
+db.products.update(
+   { _id: 100 },
+   { $set: { "details.make": "zzz" } }
+)
+
