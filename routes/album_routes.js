@@ -1156,7 +1156,7 @@ User.findOne({_id: req.params.userId}, function (error, doc) {
 	
 	 
      User.update(
-    {"_id": mongoose.Types.ObjectId("584f1709fba25c3cede9b6c2")}, 
+    {"_id": mongoose.Types.ObjectId("5a15f009ac320714003476db")}, 
     {$push: {"albums": myAlbumInfoParsed}},
     {multi: true},
     function (err, data) {
