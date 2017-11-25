@@ -1095,6 +1095,8 @@ $scope.getUsers = function() {
   
 		.success(function(data) {
          
+		  
+		 
 		 
 		  $scope.myUsersList.users = data.users;
 		  $scope.addUsersSelect();
@@ -1159,7 +1161,10 @@ for (var ul = 0; ul < $scope.myUsersList.users.length; ul++) {
     //console.log('$scope.myUsersList')
     //console.log($scope.myUsersList)
     //console.log('$scope.myUsersList')
-	 
+    if($scope.myUsersList.users[ul]._id == '5a15f009ac320714003476db') { 
+        continue; 
+    }
+ 	
    $scope.arrUsersDetails.push({
 		id: ul,
 		//label: $scope.myUsersList.users[ul].username,
