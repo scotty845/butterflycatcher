@@ -90,7 +90,8 @@
                                        init-onload="true" data="getspud">
                                        <div class="slick-item" ng-repeat="album in spud[$index].albumsMBM " >
                                           <div class="thumbnailSpecial right-caption span4">
-                                             <img class="thumbnail" data-lazy="/img/elothumb.jpg">
+                                             <img class="thumbnail" title='{{album.songs[0].title}}' data-lazy="{{album.songs[0].thumbnail}}"
+">
                                              <div class="item-title" >
                                                 <!---->
                                                 <div class="item-title" >
@@ -459,8 +460,9 @@
    <!--loop thru albums mbp -->
    <div  ng-repeat="myallsonglists in 
       allSongLists track by $index" class="img"  style="width: 200px">
-      <img  src="img/intheaeroplane.png" alt="Trolltunga Norway" width="300" height="200">
-      <div class="desc">
+      <img title='{{myallsonglists.songs[0].title}}' ng-src='{{myallsonglists.songs[0].thumbnail}}' alt="Trolltunga Norway" width="300" height="200">
+     
+	 <div class="desc">
          <p ng-click="showAlbumDetails=!showAlbumDetails" class='album-name'>{{myallsonglists.listname}}
             &nbsp;&nbsp;<i class="fa fa-plus-square fa-1x" aria-hidden="true" title="Album Contents"></i>
          </p>
@@ -475,10 +477,10 @@
          <div class="divider-10"></div>
          <div class="row-fluid">
             <div class="col-xs-2 col-sm-2 ">
-               <i  class="fa fa-play-circle fa-2x" aria-hidden="true" aria-hidden="true"title="Play Album"  ng-click="playVideoAlbum(myallsonglists.songs,myallsonglists)"></i>
+               <i  class="fa fa-play-circle fa-2x" aria-hidden="true" aria-hidden="true" title="Play Album"  ng-click="playVideoAlbum(myallsonglists.songs,myallsonglists)"></i>
             </div>
             <div class="col-xs-2 col-sm-2 ">
-               <i class="fa fa-plus-square fa-2x" ng-if="myallsonglists.createdBy!=myCurrentUser._id && JBSfindIfExists(receivedSongLists,'listname',myallsonglists.listname)=== false" ng-click="sendAlbum($index,myallsonglists,'mbp')" ></i>
+               <i class="fa fa-plus-square fa-2x" title="Collect Album" ng-if="myallsonglists.createdBy!=myCurrentUser._id && JBSfindIfExists(receivedSongLists,'listname',myallsonglists.listname)=== false" ng-click="sendAlbum($index,myallsonglists,'mbp')" ></i>
             </div>
          </div>
          <div class="col-xs-14 col-sm-14">
@@ -563,7 +565,7 @@
    <!--loop thru albums rbm -->
    <div ng-repeat="myreceivedsonglists in 
       receivedSongLists track by $index" class="img" style="width: 200px" >
-      <img  src="img/yoshimibattlesthepinkrobots.png" alt="Trolltunga Norway" width="300" height="200">
+      <img title='{{myreceivedsonglists.songs[0].title}}' ng-src='{{myreceivedsonglists.songs[0].thumbnail}}' alt="Trolltunga Norway" width="300" height="200">
       <div class="desc">
          <p ng-click="showAlbumDetails=!showAlbumDetails"class='album-name'>{{myreceivedsonglists.listname}}
             &nbsp;&nbsp;<i class="fa fa-plus-square fa-1x" aria-hidden="true " title="Album Contents"></i>
@@ -717,7 +719,10 @@
 <!-- Album Horizontal Display -->
 <!-- another loop-->
 <div ng-repeat="mysonglists in songListsTwo track by $index" class="imgTwo"  >
-   <img  src="img/originofsymmetry.png" alt="Trolltunga Norway" width="200px" height="200"/>
+ 
+   <img  class="img"  ng-if="mysonglists.songs[0].thumbnail" title='{{mysonglists.songs[0].title}}' ng-src='{{mysonglists.songs[0].thumbnail}}' alt="Trolltunga Norway" width="190" height="200"/>
+   <img  class="img"  ng-if="!mysonglists.songs[0].thumbnail" title='{{mysonglists.listname}}' ng-src='img/intheaeroplane.png' alt="Trolltunga Norway" width="190px" height="200px"/>
+
    <!-- -->
    <div  class="desc">
       <p ng-click="showAlbumDetails=!showAlbumDetails"class='album-name'>{{mysonglists.listname}}</p>
