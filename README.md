@@ -25,7 +25,7 @@ Back End Server
 Node.js   RESTful API Routing Back End Logic 
 Express   RESTful API Routing Back End Logic
 JavaScript Back End Logic Code Syntax
-MongoDB Unstructured NoSQL Database for storing data 
+MongoDB Unstructured NoSQL Database for storing data implemented with https://mlab.com/ for cloud usage
 Socket.io   Real time messaging and announcements
 
 Front End UI
@@ -49,3 +49,12 @@ Chrome
 Firefox
 
 Does Not Work on Internet Explorer 
+
+To run app locally and make changes 
+Dowload or Clone Files
+NPM Install
+Type Node Server.js in console
+Browse on Chrome or Firefox to http://localhost:3000/
+Register as a user with email and password
+log in and create collections search for videos add to collection share to individuals groups and individuals
+
